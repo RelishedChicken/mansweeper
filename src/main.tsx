@@ -24,7 +24,7 @@ $("#grid").append(getGrid(width));
 //Spawn player and mines
 let spawnedItems = spawnItems(width, numOfBombs);
 
-//Listen for key inputs (this is also the main game loop)
+//Listen for key inputs (this is also the main game loop and will end game too)
 $('body').on('keydown', (e) => {
     if(e.originalEvent !== undefined && !dead){
         const key = e.originalEvent.code;
@@ -52,6 +52,5 @@ $('body').on('keydown', (e) => {
         }else{
             renderMan(spawnedItems);
         }
-
     }
 }); 
