@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 const manSprite = "😎";
-const bombSprite = "💣";
+const bombSprite = "";
 const deathSprite = "💥";
 
 export function spawnItems(size:number, numOfBombs:number):GameData{
