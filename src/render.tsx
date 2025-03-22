@@ -48,7 +48,7 @@ export function renderBombs(items:GameData){
             let bombX = bombCoords[0];
             let bombY = bombCoords[1];
             if((cX == bombX && cY == bombY)){
-                cell.innerHTML = bombSprite
+                cell.innerHTML = bombSprite;
             }
         });
     });

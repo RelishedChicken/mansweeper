@@ -1,6 +1,7 @@
 export default {
     esbuild: {
       jsxFactory: 'h',
-      jsxFragment: 'Fragment'
+      jsxFragment: 'Fragment',
+      base: "/mansweeper",
     }
   }
