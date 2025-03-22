@@ -72,7 +72,11 @@ button:focus-visible {
 
 .cell{
   float: left;
-  font-size: 55px;
+  font-size: 350%;
+}
+
+.cell p{
+  font-size: 1em;
 }
 
 .unopened{

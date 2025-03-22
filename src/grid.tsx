@@ -1,4 +1,5 @@
 import $ from 'jquery';
+
 export function getGrid(size:number) {
   
   const baseDiv = <div style={{width: "100%", height: "100%"}}></div>;
@@ -35,7 +36,7 @@ export function getGrid(size:number) {
         extraClassesK+=" right";
       }
 
-      $(baseDiv).append(<div id={i+":"+k} class={"cell unopened"+extraClassesI+extraClassesK} style={cellStyle}></div>)
+      $(baseDiv).append(<div id={k+":"+i} class={"cell unopened"+extraClassesI+extraClassesK} style={cellStyle}></div>)
     }    
   }
 
